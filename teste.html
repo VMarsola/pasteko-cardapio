@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasteko</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var downloadLink = document.getElementById("downloadLink");
+        var fileURL = window.location.origin + "/assets/cardapiopasteko.pdf"; // Adjust the file path as needed
+        downloadLink.href = fileURL;
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <a id="downloadLink" download="cardapiopasteko">Cardápio Pasteko</a>
+
+      <img
+        src="window.location.origin/assets/pastekobg.webp"
+        alt="fundo pasteko"
+        srcset=""
+      />
+    </div>
+  </body>
+</html>
