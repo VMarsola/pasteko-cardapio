@@ -6,24 +6,12 @@
     <title>Pasteko</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var downloadLink = document.getElementById("downloadLink");
-        var fileURL = window.location.origin + "/assets/cardapiopasteko.pdf"; // Adjust the file path as needed
-        downloadLink.href = fileURL;
-
-        var imgUrl = document.getElementById("pastekoImage");
-        var url = window.location.origin + "/assets/pastekobg.webp"; // Adjust the file path as needed
-        imgUrl.src = url;
-      });
-    </script>
   </head>
   <body>
-    <div class="container">
-      <a id="downloadLink" download="cardapiopasteko">Cardápio Pasteko</a>
+    <a href="/assets/cardapiopasteko.pdf" download="cardapiopasteko">
+      Cardápio Pasteko
+    </a>
 
-      <img id="pastekoImage" alt="fundo pasteko" srcset="" />
-    </div>
+    <img src="/assets/pastekobg.webp" alt="fundo pasy" srcset="" />
   </body>
 </html>
